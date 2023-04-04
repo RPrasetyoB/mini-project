@@ -39,14 +39,15 @@ h4{
     color: whitesmoke;
     font-size: larger;
     box-shadow:9px 10px 5px -3px rgba(0,0,0,0.65) ;
+    margin-top: 10px;
 }
-.nav1{
+#nav1{
     margin-top: 15px;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: italic;
 }
-.nav2{
+#nav2{
     margin-top: 5px;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
