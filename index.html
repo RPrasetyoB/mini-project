@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html>
-    <Head>
-        <title>First Mini Project</title>        
-        <link rel="stylesheet" href="index.css"/>
-    </Head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Mini Project</title>        
+    <link rel="stylesheet" href="index.css"/>
+    <script src="index.js"></script>
+</head>
 <!----title--->
     <body>
         <h1 class="title">Triangle and Parallelogram Calculator</h1>
@@ -33,22 +37,23 @@
                     <li>h = height</li>  
                     <div>
                     <h3>Area : A = 1/2 x b x h <span> </span>Perimeter : P = b + b + b</h3>
+                    </div>
                 </div>                
                 </ul>
-                <form action="">
+                <form>
                     <label>Input b</label>
                     <input id="segib" class="display" type="number" placeholder="input value" required>
                     <br>
                     <label>Input h</label>
                     <input id="segih" class="display" type="number" placeholder="input value" required>
                 </form>
-                <button class="reset">Reset</button>
+                <button class="reset" id="resetT" type="reset" onclick="clearT()">Reset</button>
                 <div>
-                    <button>Calculate</button>
+                    <button id="calculateT" onclick="luassegi()">Calculate</button>
                 </div>
                 <div>
                     <label class="result">Area</label>
-                    <input id="segiA" class="resultb" type="number" readonly>
+                    <input id="segiA" name="segiA" class="resultb" type="number" readonly>
                 </div>
                 <div>
                     <label class="result">Perimeter</label>
@@ -76,7 +81,7 @@
                     <h3>Area : A = b x h <span></span>Perimeter : P = 2b + 2c</h3>
                     </div>
                 </div>
-                <form action="">
+                <form>
                     <label>Input b</label>
                     <input class="display" id="jajarb" type="number" placeholder="input value" required>
                     <br>
@@ -86,9 +91,9 @@
                     <label>Input h</label>
                     <input id="jajarh" class="display" type="number" placeholder="input value" required>
                 </form>
-                <button class="reset">Reset</button>
+                <button class="reset" type="reset" id="resetP" onclick="clearJ()">Reset</button>
                 <div>
-                    <button>Calculate</button>
+                    <button id="calculateJ" onclick="luasjaja()">Calculate</button>
                 </div>
                 <div>
                     <label class="result">Area</label>
