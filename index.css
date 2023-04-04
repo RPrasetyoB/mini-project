@@ -98,6 +98,7 @@ button{
 .reset{
     margin-left: 185px;
     background-color: lightgreen;
+    margin-top: 5px;
 }
 .resultb{
     margin: 3px;
