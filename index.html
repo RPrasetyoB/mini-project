@@ -1,42 +1,73 @@
 <!DOCTYPE html>
 <html>
     <Head>
-        <title>First Mini Project</title>
-        <h1>Triangle and parallelogram Calculator</h1>
-        <h4><p>This page for calculate and find area of Triangle or parallelogram</h4>
+        <title>First Mini Project</title>        
+        <link rel="stylesheet" href="index.css"/>
     </Head>
-<!----Header---->
+<!----title--->
+    <body>
+        <h1 class="title">Triangle and Parallelogram Calculator</h1>
+        <h4><p>Website for calculate Area and Perimeter of Triangle & parallelogram</h4>
+    </body>
     <header>
         <nav>
-            <ul>
-                <li>Triangle</li>
-                <li>Parallelogram</li>
-            </ul>
+            <div class="menu">
+                <a href="#" class="nav1">Triangle</a>
+                <a href="#" class="nav2">Parallelogram</a>
+            </div>
         </nav>
     </header>
 <!----main---->
     <main>
         <section id="triangle">
             <div>
-                <h2>Triangle Area</h2>
+                <h2>Triangle</h2>
             </div>
             <div>
-                <img src="../assets/segitiga.png" alt="triangle" width="300px" height="200px">
+                <img src="/assets/segitiga.png" alt="triangle" width="300px" height="200px">
             </div>
             <div>
                 <ul>
                     <li>A = Area of Triangle</li>
+                    <li>P = Perimeter of Triangle</li>
                     <li>b = base</li>
                     <li>h = height</li>
+                    <li>a = side a</li>
+                    <li>c = side c</li>    
+                    <div>
+                    <h3>Area : A = 1/2 x b x h <span> </span>Perimeter : P = a + b + c</h3>
+                    </div>                
                 </ul>
-            </div>          
+            </div>
+            <form action="">
+                <label>Input a:</label>
+                <input class="display" type="number" placeholder="input value" required>            
+                <br>
+                <label>Input b:</label>
+                <input class="display" type="number" placeholder="input value" required>
+                <br>
+                <label>Input c:</label>
+                <input class="display" type="number" placeholder="input value" required>
+                <br>
+                <label>Input h:</label>
+                <input class="display" type="number" placeholder="input value" required>
+            </form>
+            <button>Calculate</button>
+            <div>
+                <label class="result">Area</label>
+                <input id="area" type="number">
+            </div>
+            <div>
+                <label class="result">Perimeter</label>
+                <input id="perimeter" type="number">
+            </div>
         </section>
         <section id="pallarel">
             <div>
-                <h2>Parallelogram Area</h2>
+                <h2 id="par">Parallelogram</h2>
             </div>
             <div>
-                <img src="../assets/jajargenjang.png" alt="parallelogram" width="300px" height="220px">
+                <img src="/assets/jajargenjang.png" alt="parallelogram" width="300px" height="220px">
             </div>
             <div>
                 <ul>
@@ -44,7 +75,33 @@
                     <li>b = base</li>
                     <li>h = height</li>
                 </ul>
-            </div>                    
+                <div>
+                <h3>Area : A = b x c <span></span>Perimeter : P = 2b + 2c</h3>
+                </div>
+            </div>
+            <form action="">
+                <label>Input b:</label>
+                <input class="display" type="number" placeholder="input value" required>
+                <br>
+                <label>Input c:</label>
+                <input class="display" type="number" placeholder="input value" required>
+                <br>
+                <label>Input h:</label>
+                <input class="display" type="number" placeholder="input value" required>
+            </form>
+            <button>Calculate</button>
+            <div>
+                <label class="result">Area</label>
+                <input id="area" type="number">
+            </div>
+            <div>
+                <label class="result">Perimeter</label>
+                <input id="perimeter" type="number">
+            </div>                 
         </section>        
     </main>
+<!---footer--->
+    <footer>
+        <p>Copyright RPB @2023</p>
+    </footer>
 </html>
