@@ -31,35 +31,29 @@
                     <li>A = Area of Triangle</li>
                     <li>P = Perimeter of Triangle</li>
                     <li>b = base</li>
-                    <li>h = height</li>
-                    <li>a = side a</li>
-                    <li>c = side c</li>    
+                    <li>h = height</li>  
                     <div>
-                    <h3>Area : A = 1/2 x b x h <span> </span>Perimeter : P = a + b + c</h3>
+                    <h3>Area : A = 1/2 x b x h <span> </span>Perimeter : P = b + b + b</h3>
                     </div>                
                 </ul>
             </div>
             <form action="">
-                <label>Input a:</label>
-                <input class="display" type="number" placeholder="input value" required>            
+                <label>Input b</label>
+                <input id="segib" class="display" type="number" placeholder="input value" required>
                 <br>
-                <label>Input b:</label>
-                <input class="display" type="number" placeholder="input value" required>
-                <br>
-                <label>Input c:</label>
-                <input class="display" type="number" placeholder="input value" required>
-                <br>
-                <label>Input h:</label>
-                <input class="display" type="number" placeholder="input value" required>
+                <label>Input h</label>
+                <input id="segih" class="display" type="number" placeholder="input value" required>
             </form>
+            <button class="reset">Reset</button>
+            <div></div>
             <button>Calculate</button>
             <div>
                 <label class="result">Area</label>
-                <input id="area" type="number">
+                <input id="segiA" class="resultb" type="number" readonly>
             </div>
             <div>
                 <label class="result">Perimeter</label>
-                <input id="perimeter" type="number">
+                <input id="segiP" class="resultc" type="number" readonly>
             </div>
         </section>
         <section id="pallarel">
@@ -67,38 +61,44 @@
                 <h2 id="par">Parallelogram</h2>
             </div>
             <div>
-                <img src="assets/jajargenjang.png" alt="parallelogram" width="300px" height="220px">
+                <img src="/assets/jajargenjang.png" alt="parallelogram" width="300px" height="220px">
             </div>
             <div>
                 <ul>
                     <li>A = Area of Parallelogram</li>
+                    <li>P = Perimeter of Parallelogram</li>
                     <li>b = base</li>
                     <li>h = height</li>
                 </ul>
                 <div>
-                <h3>Area : A = b x c <span></span>Perimeter : P = 2b + 2c</h3>
+                <h3>Area : A = b x h <span></span>Perimeter : P = 2b + 2c</h3>
                 </div>
             </div>
             <form action="">
-                <label>Input b:</label>
-                <input class="display" type="number" placeholder="input value" required>
+                <label>Input b</label>
+                <input class="display" id="jajarb" type="number" placeholder="input value" required>
                 <br>
-                <label>Input c:</label>
-                <input class="display" type="number" placeholder="input value" required>
+                <label>Input c</label>
+                <input id="jajarc" style="margin-left: 22px;"class="display" type="number" placeholder="input value" required>
                 <br>
-                <label>Input h:</label>
-                <input class="display" type="number" placeholder="input value" required>
+                <label>Input h</label>
+                <input id="jajarh" class="display" type="number" placeholder="input value" required>
             </form>
+            <button class="reset">Reset</button>
+            <div></div>
             <button>Calculate</button>
             <div>
                 <label class="result">Area</label>
-                <input id="area" type="number">
+                <input id="jajarA" class="resultb" type="number" readonly>
             </div>
             <div>
                 <label class="result">Perimeter</label>
-                <input id="perimeter" type="number">
-            </div>                 
-        </section>        
+                <input id="jajarP" class="resultc" type="number" readonly>
+            </div>
+        </section>
+        <script>
+            var inputLabel = document.getElementById("segiA");
+        </script>        
     </main>
 <!---footer--->
     <footer>
