@@ -14,11 +14,17 @@ html{
 .title{
     margin-top: 20px;
     text-align: center;
+    font-family: cursive;
+    color: firebrick;
 }
 /* subtitle */
 h4{
     margin-top: 10px;
     text-align: center;
+}
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: darkslateblue;
 }
 /* Menu */
 .menu{
@@ -40,6 +46,9 @@ h4{
     font-size: larger;
     box-shadow:9px 10px 5px -3px rgba(0,0,0,0.65) ;
     margin-top: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+    font-style: italic;
 }
 #nav1{
     margin-top: 15px;
@@ -65,6 +74,7 @@ h4{
 h2{
     padding-top: 20px;
     margin-left: 100px;
+
 }
 h3{
     margin-top: 5px;
