@@ -23,9 +23,18 @@ function luasjaja()
     var jajarP=document.getElementById("jajarP").value;
     var h=document.getElementById("jajarh").value;
     var c=document.getElementById("jajarc").value;
+    
+            document.getElementById("jajarA").value=b*h;
+        document.getElementById("jajarP").value=(2*b)+(2*c);
+    if(c == "")
+    {   
+        document.getElementById("jajarP").value=0;
+    }
+    if(b == "")
+    {
+        document.getElementById("jajarP").value=0;
+    }
 
-    document.getElementById("jajarA").value=b*h;
-    document.getElementById("jajarP").value=(2*b)+(2*c);
 }
 
 function clearJ()
